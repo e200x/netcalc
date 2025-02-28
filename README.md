@@ -1,2 +1,2 @@
 # netcalc
-Network Calculator
+Network calculator written in Golang
