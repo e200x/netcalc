@@ -70,8 +70,6 @@ func runConsoleMode(cidr string) {
 	fmt.Printf("\nExecution time: %s\n", elapsed)
 }
 
-// Остальные функции остаются без изменений
-
 func parseCIDR(cidr string) (string, string, error) {
 	if !strings.Contains(cidr, "/") {
 		return "", "", fmt.Errorf("invalid CIDR format")
