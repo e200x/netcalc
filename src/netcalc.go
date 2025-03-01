@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	cliHelp = `Network Calculator v2.2
+	cliHelp = `Network Calculator v0.9
 Usage: %[1]s <IP/CIDR>
 
 Output:
