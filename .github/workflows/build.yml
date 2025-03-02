@@ -24,3 +24,9 @@ jobs:
 
     - name: Test
       run: go test -C ./src/netcalc -v
+
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: save artifact
+        path: ./netcalc
