@@ -19,11 +19,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: ls
-      run: ls
+    - name: cd
+      run: cd src
 
     - name: Build
-      run: go build -v src/...
+      run: go build -v ./...
 
     - name: Test
-      run: go test -v src/...
+      run: go test -v ./...
