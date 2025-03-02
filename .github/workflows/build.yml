@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Build
-      run: go build -C -o /netcalc ./src/netcalc -v 
+      run: go build -C ./src/netcalc -o /netcalc -v
 
     - name: Test
-      run: go test -modfile ./src/netcalc/go.mod -v ./src/netcalc/
+      run: go test -C ./src/netcalc -v
