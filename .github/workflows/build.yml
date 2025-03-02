@@ -12,7 +12,10 @@ on:
 jobs:
 
   build:
-    runs-on: golang:1.24-alpine3.21
+    runs-on: ubuntu-latest
+    container:
+      image: golang:1.24-alpine3.21
+
     steps:
     - uses: actions/checkout@v4
 
