@@ -19,8 +19,17 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: ls1
+      run: ls -la
+
     - name: Build
       run: go build -C ./src/netcalc -o /netcalc -v
+
+    - name: ls2
+      run: ls -la
+
+    - name: ls3
+      run: ls -la /
 
     - name: Test
       run: go test -C ./src/netcalc -v
